@@ -1,0 +1,40 @@
+conn system/tiger;
+
+create table userDetails(id number primary key,fname varchar2(12),lname varchar2(12),email varchar2(25),
+dob varchar2(10),address varchar2(20),username varchar2(15),password varchar2(15),role varchar2(15));
+
+create table roleDetails(roleId number primary key,roleName varchar2(15),roleDescription varchar2(25));
+
+create table trainingDetails(trainingId number primary key,trainingName varchar2(12),trainingType varchar2(12),trainingDesc varchar2(25));
+
+
+create table roleTrainingMappingDetails(roleid number,trainingid number
+,foreign key(trainingid) references trainingdetails(trainingid) );
+
+create table nominationdetails(id number,name varchar2(20),trainingId number,trainingName varchar2(30),applyDate varchar2(20),status number);
+
+create table statusdetails(status number primary key,name varchar2(15));
+
+ALTER TABLE nominationdetails ADD FOREIGN KEY (status) REFERENCES statusdetails(status);
+
+insert into statusdetails(status,name) values(1,'NominationSent');
+insert into statusdetails(status,name)  values(2,'Approved');
+insert into statusdetails(status,name) values(3,'Rejected');
+
+create table venuedetails(venueid number primary key,venuename varchar2(30),venuedescription varchar2(30));
+
+create table scheduledetails(id number primary key,trainingName varchar2(20),scheduledate varchar2(20),venueid number,foreign key(venueid) references venuedetails(venueid));
+
+
+
+/////execute these only in sql db
+select trainingName,scheduleDate,venuename from scheduleDetails s inner join venuedetails v on s.venueid=v.venueid; 
+
+select name,s.trainingname,scheduledate,venueid from scheduledetails s inner join nominationdetails n on s.trainingname=n.trainingname;
+
+commit;
+
+
+
+
+
