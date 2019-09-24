@@ -19,7 +19,7 @@
 
 <%@include file="LogOutPage.jsp" %>
 <%@include  file="myActSidePanelTrainingAdmin.jsp" %>
-<form action="saveScheduleTrainnigServlet" method="POST">
+<form action="saveScheduleTrainnigServlet" method="GET">
 
 <div id=h1>
 <h1>Add Schedule Training</h1>

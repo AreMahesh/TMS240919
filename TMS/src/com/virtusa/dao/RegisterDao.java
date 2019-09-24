@@ -18,7 +18,7 @@ public class RegisterDao {
 		Connection con=null;
 		try{
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-			con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:ORCL","system","tiger");
+			con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","tiger");
 		}catch(Exception e){
 			System.out.println(e);
 		}

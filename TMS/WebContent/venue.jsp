@@ -17,17 +17,17 @@
 <form action="saveVenueServlet" method="POST">
 <div id=h1>
 <h1>Add Venue</h1>
-Venue Name:<input type="text" name="venueName" placeholder="your venueName" required autofocus/></td></tr>  
+Venue Name:<input type="text" name="venueName" placeholder="your venueName" required autofocus/></td></tr><br>  
 <script>
 
 document.getElemtById('venueName').setCustomValidity('your custom Validation message come true');
 </script></td></tr><br>
-Venue Description:<input type="text" name="venueDesc" placeholder="yourvenueDesc" required autofocus/></td></tr>  
+Venue Description:<input type="text" name="venueDesc" placeholder="yourvenueDesc" required autofocus/></td></tr><br>  
 <script>
 
 document.getElemtById('venueDesc').setCustomValidity('your custom Validation message come true');
 </script></td></tr><br>
-    <input type="submit" name="submit" value="Submit">
+    <input type="submit" name="submit" value="Submit"n style="margin-left: 10%">
   </div>
   </head>
 </body>

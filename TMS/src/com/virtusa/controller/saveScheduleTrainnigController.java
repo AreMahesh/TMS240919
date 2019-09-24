@@ -40,8 +40,15 @@ public class saveScheduleTrainnigController extends HttpServlet {
          if(trainingName!= null && scheduleDate!=null && venueName!=null) {
         	 
         	 if(SaveScheduleTrainingBo.saveScheduleDetails(trainingName,scheduleDate,venueName)) {
-        		 RequestDispatcher rd=request.getRequestDispatcher("SaveScheduleTrainingServlet2");  
-    		     rd.forward(request,response);
+				/*
+				 * RequestDispatcher
+				 * rd=request.getRequestDispatcher("SaveScheduleTrainingServlet2");
+				 * rd.forward(request,response);
+				 */
+        		 pw.print(" ScheduleTrainingDetails details inserted");  
+      			
+    			 RequestDispatcher rd=request.getRequestDispatcher("scheduleTraining.jsp");
+    			 rd.include(request,response);
         		 
         	 }else{
         		 pw.print("Sorry ScheduleTrainingDetails details not inserted");  
@@ -51,9 +58,7 @@ public class saveScheduleTrainnigController extends HttpServlet {
 
         	 }
         	 
-        	 
-        	 
-         }
+        }
          
 	
          
