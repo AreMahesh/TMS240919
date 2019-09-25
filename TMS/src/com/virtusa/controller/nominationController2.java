@@ -22,7 +22,7 @@ public class nominationController2 extends HttpServlet {
 
 			 response.setContentType("text/html"); 
 			 Logger log=Logger.getLogger(nominationController2.class);
-			 PropertyConfigurator.configure("F:\\sw\\eclipse-jee-neon-3-win32\\eclipse\\kalyani\\TMS2\\src\\log4j.properties");
+			 PropertyConfigurator.configure("C:\\Users\\aremahesh\\git\\TMS240919\\TMS\\src\\log4j.properties");
 				log.debug("Sample debug message");
 				log.info("Sample info message");
 				log.warn("Sample warn message");
