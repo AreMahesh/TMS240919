@@ -17,8 +17,12 @@ public class RegisterDao {
 	public static Connection getConnection(){
 		Connection con=null;
 		try{
-			Class.forName("oracle.jdbc.driver.OracleDriver");
-			con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","tiger");
+			//Class.forName("oracle.jdbc.driver.OracleDriver");
+			//con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","tiger");
+		   // Class.forName("oracle.jdbc.driver.OracleDriver");
+
+		    Class.forName("com.mysql.jdbc.Driver");
+		    con=DriverManager.getConnection("jdbc:mysql://localhost:3306/tms","root","system");
 		}catch(Exception e){
 			System.out.println(e);
 		}
@@ -33,7 +37,7 @@ public class RegisterDao {
 		int status=0;
 		try{
 			Connection con=RegisterDao.getConnection();
-			try(PreparedStatement ps=con.prepareStatement("insert into userDetails(id,fname,lname,email,dob,address,username,password,role) values (?,?,?,?,?,?,?,?,?)")){
+			try(PreparedStatement ps=con.prepareStatement("insert into userdetails(id,fname,lname,email,dob,address,username,password,role) values (?,?,?,?,?,?,?,?,?)")){
 		    ps.setInt(1, getId());
 			ps.setString(2,e.getFirstName());
 			ps.setString(3,e.getLastName());
