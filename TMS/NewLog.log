@@ -1,0 +1,38 @@
+2019-09-25 14:43:52,483 DEBUG [http-nio-8007-exec-10] SaveRoleController:31 - Sample debug message
+ 2019-09-25 14:43:52,490  INFO [http-nio-8007-exec-10] SaveRoleController:32 - Sample info message
+ 2019-09-25 14:43:52,490  WARN [http-nio-8007-exec-10] SaveRoleController:33 - Sample warn message
+ 2019-09-25 14:43:52,490 ERROR [http-nio-8007-exec-10] SaveRoleController:34 - Sample error message
+ 2019-09-25 14:43:52,490 FATAL [http-nio-8007-exec-10] SaveRoleController:35 - Sample fatal message
+ 2019-09-25 15:21:07,413 DEBUG [http-nio-8007-exec-29] SaveRoleController:31 - Sample debug message
+ 2019-09-25 15:21:07,419  INFO [http-nio-8007-exec-29] SaveRoleController:32 - Sample info message
+ 2019-09-25 15:21:07,419  WARN [http-nio-8007-exec-29] SaveRoleController:33 - Sample warn message
+ 2019-09-25 15:21:07,420 ERROR [http-nio-8007-exec-29] SaveRoleController:34 - Sample error message
+ 2019-09-25 15:21:07,420 FATAL [http-nio-8007-exec-29] SaveRoleController:35 - Sample fatal message
+ 2019-09-25 16:47:59,816 DEBUG [http-nio-8007-exec-8] SaveRoleController:35 - Sample debug message
+ 2019-09-25 16:47:59,823  INFO [http-nio-8007-exec-8] SaveRoleController:36 - Sample info message
+ 2019-09-25 16:47:59,823  WARN [http-nio-8007-exec-8] SaveRoleController:37 - Sample warn message
+ 2019-09-25 16:47:59,826 ERROR [http-nio-8007-exec-8] SaveRoleController:38 - Sample error message
+ 2019-09-25 16:47:59,826 FATAL [http-nio-8007-exec-8] SaveRoleController:39 - Sample fatal message
+ 2019-09-25 16:47:59,826  INFO [http-nio-8007-exec-8] SaveRoleController:42 - AssociateTier1
+ 2019-09-25 16:47:59,928 DEBUG [http-nio-8007-exec-8] SaveRoleController2:28 - Sample debug message
+ 2019-09-25 16:47:59,929  INFO [http-nio-8007-exec-8] SaveRoleController2:29 - Sample info message
+ 2019-09-25 16:47:59,929  WARN [http-nio-8007-exec-8] SaveRoleController2:30 - Sample warn message
+ 2019-09-25 16:47:59,929 ERROR [http-nio-8007-exec-8] SaveRoleController2:31 - Sample error message
+ 2019-09-25 16:47:59,930 FATAL [http-nio-8007-exec-8] SaveRoleController2:32 - Sample fatal message
+ 2019-09-25 16:48:32,750 DEBUG [http-nio-8007-exec-3] SaveRoleController:35 - Sample debug message
+ 2019-09-25 16:48:32,752  INFO [http-nio-8007-exec-3] SaveRoleController:36 - Sample info message
+ 2019-09-25 16:48:32,752  WARN [http-nio-8007-exec-3] SaveRoleController:37 - Sample warn message
+ 2019-09-25 16:48:32,752 ERROR [http-nio-8007-exec-3] SaveRoleController:38 - Sample error message
+ 2019-09-25 16:48:32,753 FATAL [http-nio-8007-exec-3] SaveRoleController:39 - Sample fatal message
+ 2019-09-25 16:48:32,753  INFO [http-nio-8007-exec-3] SaveRoleController:42 - AssociateTier-2
+ 2019-09-25 16:48:32,911 DEBUG [http-nio-8007-exec-3] SaveRoleController2:28 - Sample debug message
+ 2019-09-25 16:48:32,912  INFO [http-nio-8007-exec-3] SaveRoleController2:29 - Sample info message
+ 2019-09-25 16:48:32,912  WARN [http-nio-8007-exec-3] SaveRoleController2:30 - Sample warn message
+ 2019-09-25 16:48:32,913 ERROR [http-nio-8007-exec-3] SaveRoleController2:31 - Sample error message
+ 2019-09-25 16:48:32,913 FATAL [http-nio-8007-exec-3] SaveRoleController2:32 - Sample fatal message
+ 2019-09-25 18:53:28,017 DEBUG [http-nio-8007-exec-1] SaveRoleController:31 - Sample debug message
+ 2019-09-25 18:53:28,025  INFO [http-nio-8007-exec-1] SaveRoleController:32 - Sample info message
+ 2019-09-25 18:53:28,025  WARN [http-nio-8007-exec-1] SaveRoleController:33 - Sample warn message
+ 2019-09-25 18:53:28,025 ERROR [http-nio-8007-exec-1] SaveRoleController:34 - Sample error message
+ 2019-09-25 18:53:28,025 FATAL [http-nio-8007-exec-1] SaveRoleController:35 - Sample fatal message
+ 
