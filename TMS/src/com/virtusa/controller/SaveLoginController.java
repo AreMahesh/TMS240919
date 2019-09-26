@@ -12,6 +12,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+
+import com.virtusa.bo.SaveLoginBo;
 import com.virtusa.dao.RegisterDao;
 
 
@@ -28,7 +30,7 @@ public class SaveLoginController extends HttpServlet {
 		String passWord=request.getParameter("passWord");
 		String hiddenId=request.getParameter("adminId");
 		
-		al=RegisterDao.loginValidate(uname,passWord);
+		al=SaveLoginBo.loginValidate(uname,passWord);
 	  boolean ans = al.isEmpty(); 
 	  if(ans == false){
 	     	String s1=al.get(0);

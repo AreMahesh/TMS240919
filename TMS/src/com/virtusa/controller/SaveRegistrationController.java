@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.virtusa.bean.EmployeeBean;
+import com.virtusa.bo.SaveRegistrationBo;
 import com.virtusa.dao.RegisterDao;
 
 
@@ -46,7 +47,7 @@ public class SaveRegistrationController extends HttpServlet {
 			eb.setConfirmPW(confirmPW);
 			eb.setHiddenId(userType);
 			
-			if(RegisterDao.save(eb)) {
+			if(SaveRegistrationBo.save(eb)) {
 				try {
 				RequestDispatcher rd=request.getRequestDispatcher("SaveRegistrationServlet2");  
 			    rd.forward(request,response); 
