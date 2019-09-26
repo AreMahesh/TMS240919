@@ -21,7 +21,7 @@ public class RegisterDao {
 			//con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","tiger");
 		   // Class.forName("oracle.jdbc.driver.OracleDriver");
 
-		    Class.forName("com.mysql.jdbc.Driver");
+		    Class.forName("com.mysql.cj.jdbc.Driver");
 		    con=DriverManager.getConnection("jdbc:mysql://localhost:3306/tms","root","system");
 		}catch(Exception e){
 			System.out.println(e);

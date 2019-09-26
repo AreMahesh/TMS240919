@@ -72,17 +72,19 @@ public class SaveNominationDao {
 		
 		
 		int status=0;
+		int a=1;
 		Connection con=RegisterDao.getConnection();
 		
 		try{
 			
 			
-			try(PreparedStatement ps=con.prepareStatement("insert into nominationDetails(id,name,trainingId,trainingName,applydate) values (?,?,?,?,?)")){
+			try(PreparedStatement ps=con.prepareStatement("insert into nominationDetails(id,name,trainingId,trainingName,applydate,status) values (?,?,?,?,?,?)")){
 		    ps.setInt(1, getId());
 			ps.setString(2,(fname+" "+lname));
 			ps.setInt(3,trainingId1);
 			ps.setString(4, trainingName1);
 		    ps.setString(5, applyDate);	
+		    ps.setInt(6, a);
 		
 			status=ps.executeUpdate();
 			

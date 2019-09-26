@@ -82,10 +82,20 @@ public class TrainingRoleMappingDao {
 			
 			Connection con=RegisterDao.getConnection();
 			
-			PreparedStatement stmt=con.prepareStatement("delete roletrainingmappingdetails where roleid=?");
-			stmt.setInt(1,roleid);
-			a=stmt.executeUpdate();
-		
+//			 PreparedStatement ps1=con.prepareStatement("select count(*) from roletrainingmappingdetails where roleid=?");
+//			 ps1.setInt(1, roleid);
+//		     ResultSet rs=ps1.executeQuery();
+//		     while (rs.next()) { 
+//		    	    PreparedStatement stmt=con.prepareStatement("delete roletrainingmappingdetails where roleid = ?");
+//				 	stmt.setInt(1,roleid);
+//					a=stmt.executeUpdate();
+//		    	   
+//		     }
+//		     
+//		     else {
+//		    	 System.out.println("No data"); 
+//			
+//		     }
 			
 			for(int i=0;i<trainingIdsList.size();i++) {
 			PreparedStatement ps=con.prepareStatement("insert into roletrainingMappingdetails(roleId,trainingId) values (?,?)");

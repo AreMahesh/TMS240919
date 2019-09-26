@@ -25,15 +25,18 @@
 <div id="h1">
 <h1>Add Role-Training Mapping</h1>
 
-<%   
+<%  
+if(request.getAttribute("roleList")!=null){
 ArrayList<RoleBean> rolelist1 = (ArrayList<RoleBean>) request.getAttribute("roleList");
  ArrayList al1=new ArrayList();
 for(int i=0;i<rolelist1.size();i++){
 	al1.add((i+1)+""+rolelist1.get(i).getRoleName());
 }
  request.setAttribute("hi", al1);
+}
 %>
 <%   
+
 ArrayList<TrainingBean> traininglist1 = (ArrayList<TrainingBean>) request.getAttribute("trainingList");
 ArrayList al2=new ArrayList();
 for(int i=0;i<traininglist1.size();i++){
